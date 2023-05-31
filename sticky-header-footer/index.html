@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky header and footer</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #app {
+        height: 100vh;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "header" "main";
+      }
+
+      #app > header {
+        grid-area: header;
+      }
+
+      #app > main {
+        grid-area: main;
+        overflow: auto;
+        padding: 15px 5px 10px 5px;
+
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr minmax(0, 600px) 1fr;
+      }
+
+      #app > main > section {
+        grid-area: 1 / 2 / 1 / 3;
+      }
+
+      #app > main > footer {
+        grid-area: 2 / 1 / 3 / 4;
+      }
+
+      #app > footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>Content</header>
+      <main>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+            laudantium architecto voluptas necessitatibus quaerat, optio neque
+            quia nisi? Aspernatur molestias earum animi incidunt unde sint
+            temporibus maxime fugit similique molestiae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            labore voluptates qui consectetur autem aperiam eveniet nulla iure
+            quasi alias doloribus iste, accusantium commodi consequatur
+            aspernatur non similique assumenda dolores?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+            molestiae sapiente velit fuga obcaecati, ducimus magnam natus
+            placeat commodi cupiditate odit ipsum exercitationem delectus nobis
+            perspiciatis magni id autem. Nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in
+            quasi at sed ea quae omnis molestias sint dolores alias quia
+            nesciunt optio quibusdam debitis aut corporis velit, eligendi et!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            temporibus, eum quibusdam hic accusantium ab accusamus corporis
+            excepturi repellat adipisci minima voluptates beatae nisi atque
+            nesciunt corrupti iste eaque quos!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+            laudantium architecto voluptas necessitatibus quaerat, optio neque
+            quia nisi? Aspernatur molestias earum animi incidunt unde sint
+            temporibus maxime fugit similique molestiae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            labore voluptates qui consectetur autem aperiam eveniet nulla iure
+            quasi alias doloribus iste, accusantium commodi consequatur
+            aspernatur non similique assumenda dolores?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+            molestiae sapiente velit fuga obcaecati, ducimus magnam natus
+            placeat commodi cupiditate odit ipsum exercitationem delectus nobis
+            perspiciatis magni id autem. Nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in
+            quasi at sed ea quae omnis molestias sint dolores alias quia
+            nesciunt optio quibusdam debitis aut corporis velit, eligendi et!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            temporibus, eum quibusdam hic accusantium ab accusamus corporis
+            excepturi repellat adipisci minima voluptates beatae nisi atque
+            nesciunt corrupti iste eaque quos!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+            laudantium architecto voluptas necessitatibus quaerat, optio neque
+            quia nisi? Aspernatur molestias earum animi incidunt unde sint
+            temporibus maxime fugit similique molestiae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            labore voluptates qui consectetur autem aperiam eveniet nulla iure
+            quasi alias doloribus iste, accusantium commodi consequatur
+            aspernatur non similique assumenda dolores?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+            molestiae sapiente velit fuga obcaecati, ducimus magnam natus
+            placeat commodi cupiditate odit ipsum exercitationem delectus nobis
+            perspiciatis magni id autem. Nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in
+            quasi at sed ea quae omnis molestias sint dolores alias quia
+            nesciunt optio quibusdam debitis aut corporis velit, eligendi et!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            temporibus, eum quibusdam hic accusantium ab accusamus corporis
+            excepturi repellat adipisci minima voluptates beatae nisi atque
+            nesciunt corrupti iste eaque quos!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+            laudantium architecto voluptas necessitatibus quaerat, optio neque
+            quia nisi? Aspernatur molestias earum animi incidunt unde sint
+            temporibus maxime fugit similique molestiae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            labore voluptates qui consectetur autem aperiam eveniet nulla iure
+            quasi alias doloribus iste, accusantium commodi consequatur
+            aspernatur non similique assumenda dolores?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+            molestiae sapiente velit fuga obcaecati, ducimus magnam natus
+            placeat commodi cupiditate odit ipsum exercitationem delectus nobis
+            perspiciatis magni id autem. Nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in
+            quasi at sed ea quae omnis molestias sint dolores alias quia
+            nesciunt optio quibusdam debitis aut corporis velit, eligendi et!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            temporibus, eum quibusdam hic accusantium ab accusamus corporis
+            excepturi repellat adipisci minima voluptates beatae nisi atque
+            nesciunt corrupti iste eaque quos!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+            laudantium architecto voluptas necessitatibus quaerat, optio neque
+            quia nisi? Aspernatur molestias earum animi incidunt unde sint
+            temporibus maxime fugit similique molestiae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            labore voluptates qui consectetur autem aperiam eveniet nulla iure
+            quasi alias doloribus iste, accusantium commodi consequatur
+            aspernatur non similique assumenda dolores?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+            molestiae sapiente velit fuga obcaecati, ducimus magnam natus
+            placeat commodi cupiditate odit ipsum exercitationem delectus nobis
+            perspiciatis magni id autem. Nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in
+            quasi at sed ea quae omnis molestias sint dolores alias quia
+            nesciunt optio quibusdam debitis aut corporis velit, eligendi et!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            temporibus, eum quibusdam hic accusantium ab accusamus corporis
+            excepturi repellat adipisci minima voluptates beatae nisi atque
+            nesciunt corrupti iste eaque quos!
+          </p>
+        </section>
+        <footer>&copy; 2020</footer>
+      </main>
+    </div>
+  </body>
+</html>

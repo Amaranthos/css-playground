@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="2" /> -->
+    <title>Tailwind.css Display</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container title">
+      <h1 class="text-2xl">Elements</h1>
+    </div>
+    <div class="container title">
+      <h2>block (using span)</h2>
+    </div>
+    <div class="container mx-auto bg-gray-200">
+      <span class="block text-center bg-gray-400 px-4 py-2">1</span>
+      <span class="block text-center bg-gray-500 px-4 py-2 mt-2">2</span>
+      <span class="block text-center bg-gray-400 px-4 py-2 mt-2">3</span>
+    </div>
+    <div class="container title">
+      <h2>inline-block (using div)</h2>
+    </div>
+    <div class="container mx-auto bg-gray-200">
+      <div class="inline-block text-center bg-gray-400 px-4 py-2">1</div>
+      <div class="inline-block text-center bg-gray-500 px-4 py-2">2</div>
+      <div class="inline-block text-center bg-gray-400 px-4 py-2">3</div>
+    </div>
+    <div class="container title">
+      <h2>inline (using div)</h2>
+    </div>
+    <div class="container mx-auto bg-gray-200">
+      <div class="inline text-center bg-gray-400 px-4 py-2">1</div>
+      <div class="inline text-center bg-gray-500 px-4 py-2">2</div>
+      <div class="inline text-center bg-gray-400 px-4 py-2">3</div>
+    </div>
+    <div class="container title">
+      <h1 class="text-2xl">Containers</h1>
+    </div>
+    <div class="container title">
+      <h2>flex (with flex-1)</h2>
+    </div>
+    <div class="container mx-auto">
+      <div class="flex bg-gray-200">
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">1</div>
+        <div class="flex-1 text-center bg-gray-500 px-4 py-2">2</div>
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">3</div>
+      </div>
+      <div class="flex bg-gray-200">
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">1</div>
+        <div class="flex-1 text-center bg-gray-500 px-4 py-2">2</div>
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">3</div>
+      </div>
+    </div>
+    <div class="container title">
+      <h2>inline-flex (with flex-1)</h2>
+    </div>
+    <div class="container mx-auto">
+      <div class="inline-flex bg-gray-200">
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">1</div>
+        <div class="flex-1 text-center bg-gray-500 px-4 py-2">2</div>
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">3</div>
+      </div>
+      <div class="inline-flex bg-gray-200">
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">1</div>
+        <div class="flex-1 text-center bg-gray-500 px-4 py-2">2</div>
+        <div class="flex-1 text-center bg-gray-400 px-4 py-2">3</div>
+      </div>
+    </div>
+    <div class="container title">
+      <h1 class="text-2xl">Grid</h1>
+    </div>
+    <div class="container title">
+      <h2>grid</h2>
+    </div>
+    <div class="container mx-auto">
+      <div class="grid gap-4 grid-cols-3">
+        <div class="bg-gray-300 h-12"></div>
+        <div class="bg-gray-500 h-12"></div>
+        <div class="bg-gray-300 h-12"></div>
+        <div class="bg-gray-500 h-12"></div>
+        <div class="bg-gray-300 h-12"></div>
+        <div class="bg-gray-500 h-12"></div>
+        <div class="bg-gray-300 h-12"></div>
+        <div class="bg-gray-500 h-12"></div>
+        <div class="bg-gray-300 h-12"></div>
+      </div>
+    </div>
+  </body>
+</html>
